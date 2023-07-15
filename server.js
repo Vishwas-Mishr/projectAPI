@@ -4,12 +4,14 @@ const dotenv = require('dotenv').config();
 const PORT = process.env.PORT || 3500;
 
 const productRouter = require('./Routes/products');
+const rootRouter = require('./Routes/root');
 
 app.use(express.json());
 app.use(express.urlencoded({extended:true}));
 
 require("./initDB")();
 
+app.use('/', rootRouter);
 app.use('/api/product', productRouter);
 
 app.all('*', (req, res, next) => {
