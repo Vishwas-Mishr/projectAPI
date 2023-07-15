@@ -1,0 +1,20 @@
+{
+  "name": "productsapi",
+  "version": "1.0.0",
+  "description": "This RESTful Api is designed to showcase CURD operations on products for an e-commerce platform.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "author": "Vishwas Mishra",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  },
+  "dependencies": {
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "mongoose": "^7.3.4"
+  }
+}
